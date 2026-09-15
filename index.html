@@ -3,13 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>thin-thin · 科技瘦身与变美</title>
-  <meta name="description" content="thin-thin 是一个与瘦身和变美相关的科技美学网页。" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>科技瘦身与变美 | thin-thin 官网</title>
+  <meta name="description" content="thin-thin 是科技瘦身与变美官网。用数字科技与数据，让身体变化更清晰、更优雅。业务洽谈请联系 18998718731@163.com。" />
+  <meta name="keywords" content="科技瘦身与变美,科技瘦身,变美,瘦身,thin-thin,数字变美,体态扫描" />
+  <meta name="author" content="thin-thin" />
+  <meta name="robots" content="index,follow" />
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://thin-thin.com/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://thin-thin.com/" />
+  <link rel="sitemap" type="application/xml" href="https://thin-thin.com/sitemap.xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="thin-thin" />
+  <meta property="og:url" content="https://thin-thin.com/" />
+  <meta property="og:title" content="科技瘦身与变美 | thin-thin 官网" />
+  <meta property="og:description" content="thin-thin 专注科技瘦身与变美，用数字科技让身体变化更清晰、更优雅。" />
+  <meta property="og:image" content="https://thin-thin.com/assets/hero-beauty.jpg" />
+  <meta property="og:image:alt" content="thin-thin 科技瘦身与变美" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="科技瘦身与变美 | thin-thin 官网" />
+  <meta name="twitter:description" content="thin-thin 专注科技瘦身与变美，用数字科技让身体变化更清晰、更优雅。" />
+  <meta name="twitter:image" content="https://thin-thin.com/assets/hero-beauty.jpg" />
+
+  <link rel="icon" href="https://thin-thin.com/assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Oxanium:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://thin-thin.com/#website",
+        "name": "thin-thin",
+        "alternateName": "科技瘦身与变美",
+        "url": "https://thin-thin.com/",
+        "inLanguage": "zh-CN",
+        "description": "thin-thin 是科技瘦身与变美官网，用数字科技让身体变化更清晰、更优雅。"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://thin-thin.com/#organization",
+        "name": "thin-thin",
+        "url": "https://thin-thin.com/",
+        "email": "18998718731@163.com",
+        "logo": "https://thin-thin.com/assets/favicon.svg"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://thin-thin.com/#webpage",
+        "url": "https://thin-thin.com/",
+        "name": "科技瘦身与变美",
+        "isPartOf": { "@id": "https://thin-thin.com/#website" },
+        "about": ["科技瘦身与变美", "科技瘦身", "变美"],
+        "inLanguage": "zh-CN",
+        "description": "thin-thin 科技瘦身与变美官网。",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://thin-thin.com/assets/hero-beauty.jpg"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <canvas id="field" aria-hidden="true"></canvas>
@@ -24,7 +86,7 @@
     <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="主导航">
       <a href="#home" class="is-active" data-section="home">首页</a>
       <a href="#products" data-section="products">产品</a>
       <a href="#solutions" data-section="solutions">解决方案</a>
@@ -39,9 +101,9 @@
           <span>SYS.01</span>
           <span>AESTHETIC PROTOCOL</span>
         </p>
-        <h1><span class="hero-line">科技，让瘦身与变美</span>随处可见。</h1>
+        <h1><span class="hero-line">科技瘦身与变美</span>随处可见。</h1>
         <p class="lede">
-          这是一个与瘦身和变美的家园：thin-thin 用科技和数据，让身体变化变得更清晰、更优雅。
+          thin-thin 是科技瘦身与变美官网。我们用数字科技和数据，让身体变化变得更清晰、更优雅。
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="#products">进入产品矩阵</a>
@@ -49,34 +111,58 @@
         </div>
       </div>
 
-      <div class="hero-stage" aria-hidden="true">
-        <img class="hero-beauty" src="assets/hero-beauty.jpg" alt="" />
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="orbit orbit-c"></div>
-        <div class="radar"></div>
-        <div class="scan-bar"></div>
-        <div class="hud hud-tl">CORE / 00</div>
-        <div class="hud hud-tr">SCAN 98.6%</div>
-        <div class="hud hud-bl">BODY MAP</div>
-        <div class="hud hud-br">LIVE</div>
+      <div class="hero-stage">
+        <img class="hero-beauty" src="assets/hero-beauty.jpg" width="768" height="1024" alt="thin-thin 科技瘦身与变美：气质出众的纤瘦女性形象" />
+        <div class="orbit orbit-a" aria-hidden="true"></div>
+        <div class="orbit orbit-b" aria-hidden="true"></div>
+        <div class="orbit orbit-c" aria-hidden="true"></div>
+        <div class="radar" aria-hidden="true"></div>
+        <div class="scan-bar" aria-hidden="true"></div>
+        <div class="hud hud-tl" aria-hidden="true">CORE / 00</div>
+        <div class="hud hud-tr" aria-hidden="true">SCAN 98.6%</div>
+        <div class="hud hud-bl" aria-hidden="true">BODY MAP</div>
+        <div class="hud hud-br" aria-hidden="true">LIVE</div>
       </div>
     </section>
 
     <section class="panel" id="products">
       <header class="panel-head">
         <p class="kicker"><span>SYS.02</span><span>PRODUCTS</span></p>
-        <h2>产品</h2>
+        <h2>科技瘦身与变美产品</h2>
       </header>
-      <p class="panel-note">产品内容即将上线，这里将展示与瘦身、体态和变美相关的科技能力。</p>
+      <p class="panel-note">thin-thin 围绕科技瘦身与变美，把身体变化变成看得见的数据和方案。</p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>数字体态扫描</h3>
+          <p>用科技记录轮廓与体态，让瘦身起点不再模糊。</p>
+        </article>
+        <article class="feature-card">
+          <h3>科学瘦身路径</h3>
+          <p>把减脂与塑形过程拆成可追踪的步骤，让变化有据可依。</p>
+        </article>
+        <article class="feature-card">
+          <h3>变美方案可视化</h3>
+          <p>把变美目标呈现出来，让审美与身材管理在同一画面里对齐。</p>
+        </article>
+      </div>
     </section>
 
     <section class="panel" id="solutions">
       <header class="panel-head">
         <p class="kicker"><span>SYS.03</span><span>SOLUTIONS</span></p>
-        <h2>解决方案</h2>
+        <h2>科技瘦身与变美解决方案</h2>
       </header>
-      <p class="panel-note">解决方案即将上线，将围绕个人变美与机构场景展开。</p>
+      <p class="panel-note">无论是个人变美，还是机构场景，thin-thin 都用同一套科技瘦身与变美方法来降低沟通成本。</p>
+      <div class="feature-grid two">
+        <article class="feature-card">
+          <h3>个人科技瘦身</h3>
+          <p>适合想更清晰看见身体变化、并用数据陪伴瘦身与变美的个人用户。</p>
+        </article>
+        <article class="feature-card">
+          <h3>机构协作方案</h3>
+          <p>适合工作室、顾问与品牌方，把科技瘦身与变美能力接到既有服务流程里。</p>
+        </article>
+      </div>
     </section>
 
     <section class="panel" id="contact">
@@ -84,12 +170,12 @@
         <p class="kicker"><span>SYS.04</span><span>CONTACT</span></p>
         <h2>联系方式</h2>
       </header>
-      <p class="panel-note">若想洽谈业务，请联系邮箱：<a class="mail-link" href="mailto:18998718731@163.com">18998718731@163.com</a></p>
+      <p class="panel-note">若想洽谈科技瘦身与变美相关业务，请联系邮箱：<a class="mail-link" href="mailto:18998718731@163.com">18998718731@163.com</a></p>
     </section>
   </main>
 
   <footer class="foot">
-    <span>THIN·THIN</span>
+    <span>THIN·THIN · 科技瘦身与变美</span>
     <span>SCIENCE × BEAUTY</span>
   </footer>
 

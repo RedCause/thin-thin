@@ -316,6 +316,42 @@ main,
 
 .panel h2 { font-size: 32px; margin-bottom: 16px; }
 
+.panel h3 {
+  font-family: Oxanium, "Noto Sans SC", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.panel-note {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.feature-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-card {
+  border: 1px solid var(--line);
+  padding: 22px 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
 .panel-note {
   color: var(--muted);
   font-size: 16px;
@@ -368,4 +404,6 @@ main,
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 28px; }
   .hero-stage { height: 380px; }
   .panel { padding: 32px 22px; }
+  .feature-grid,
+  .feature-grid.two { grid-template-columns: 1fr; }
 }
