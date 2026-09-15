@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>thin-thin · 科技瘦身与变美</title>
+  <meta name="description" content="thin-thin 是一个与瘦身和变美相关的科技美学网页。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Oxanium:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">THIN<span>·</span>THIN</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="is-active" data-section="home">首页</a>
+      <a href="#products" data-section="products">产品</a>
+      <a href="#solutions" data-section="solutions">解决方案</a>
+      <a href="#contact" data-section="contact">联系方式</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="kicker">
+          <span>SYS.01</span>
+          <span>AESTHETIC PROTOCOL</span>
+        </p>
+        <h1><span class="hero-line">科技，让瘦身与变美</span>随处可见。</h1>
+        <p class="lede">
+          这是一个与瘦身和变美的家园：thin-thin 用科技和数据，让身体变化变得更清晰、更优雅。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">进入产品矩阵</a>
+          <a class="btn ghost" href="#contact">建立连接</a>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-hidden="true">
+        <img class="hero-beauty" src="assets/hero-beauty.jpg" alt="" />
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="radar"></div>
+        <div class="scan-bar"></div>
+        <div class="hud hud-tl">CORE / 00</div>
+        <div class="hud hud-tr">SCAN 98.6%</div>
+        <div class="hud hud-bl">BODY MAP</div>
+        <div class="hud hud-br">LIVE</div>
+      </div>
+    </section>
+
+    <section class="panel" id="products">
+      <header class="panel-head">
+        <p class="kicker"><span>SYS.02</span><span>PRODUCTS</span></p>
+        <h2>产品</h2>
+      </header>
+      <p class="panel-note">产品内容即将上线，这里将展示与瘦身、体态和变美相关的科技能力。</p>
+    </section>
+
+    <section class="panel" id="solutions">
+      <header class="panel-head">
+        <p class="kicker"><span>SYS.03</span><span>SOLUTIONS</span></p>
+        <h2>解决方案</h2>
+      </header>
+      <p class="panel-note">解决方案即将上线，将围绕个人变美与机构场景展开。</p>
+    </section>
+
+    <section class="panel" id="contact">
+      <header class="panel-head">
+        <p class="kicker"><span>SYS.04</span><span>CONTACT</span></p>
+        <h2>联系方式</h2>
+      </header>
+      <p class="panel-note">若想洽谈业务，请联系邮箱：<a class="mail-link" href="mailto:18998718731@163.com">18998718731@163.com</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>THIN·THIN</span>
+    <span>SCIENCE × BEAUTY</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
