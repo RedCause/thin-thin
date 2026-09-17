@@ -2,6 +2,14 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      var host = location.hostname.toLowerCase();
+      if (host !== "thin-thin.com" && host !== "www.thin-thin.com") return;
+      if (location.protocol === "https:" && host === "thin-thin.com") return;
+      location.replace("https://thin-thin.com" + location.pathname + location.search + location.hash);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>科技瘦身|瘦瘦科技 thin-thin</title>
   <meta name="description" content="瘦瘦科技（thin-thin）是科技瘦身与变美官网。用数字科技与数据，让身体变化更清晰、更优雅。业务洽谈请联系 18998718731@163.com。" />
@@ -18,14 +26,14 @@
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="瘦瘦科技" />
   <meta property="og:url" content="https://thin-thin.com/" />
-  <meta property="og:title" content="科技瘦身与变美 | 瘦瘦科技 thin-thin" />
-  <meta property="og:description" content="瘦瘦科技（thin-thin）专注科技瘦身与变美，用数字科技让身体变化更清晰、更优雅。" />
+  <meta property="og:title" content="科技瘦身 | 瘦瘦科技 thin-thin" />
+  <meta property="og:description" content="瘦瘦科技（thin-thin）专注科技瘦身，用数字科技让身体变化更清晰、更优雅。" />
   <meta property="og:image" content="https://thin-thin.com/assets/hero-beauty.jpg" />
-  <meta property="og:image:alt" content="瘦瘦科技 thin-thin 科技瘦身与变美" />
+  <meta property="og:image:alt" content="瘦瘦科技 thin-thin 科技瘦身" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="科技瘦身与变美 | 瘦瘦科技 thin-thin" />
-  <meta name="twitter:description" content="瘦瘦科技（thin-thin）专注科技瘦身与变美，用数字科技让身体变化更清晰、更优雅。" />
+  <meta name="twitter:title" content="科技瘦身 | 瘦瘦科技 thin-thin" />
+  <meta name="twitter:description" content="瘦瘦科技（thin-thin）专注科技瘦身，用数字科技让身体变化更清晰、更优雅。" />
   <meta name="twitter:image" content="https://thin-thin.com/assets/hero-beauty.jpg" />
 
   <link rel="icon" href="https://thin-thin.com/assets/favicon.svg" type="image/svg+xml" />
@@ -45,7 +53,7 @@
         "alternateName": ["thin-thin", "THIN·THIN"],
         "url": "https://thin-thin.com/",
         "inLanguage": "zh-CN",
-        "description": "瘦瘦科技（thin-thin）是科技瘦身与变美官网，用数字科技让身体变化更清晰、更优雅。"
+        "description": "瘦瘦科技（thin-thin）是科技瘦身官网，用数字科技让身体变化更清晰、更优雅。"
       },
       {
         "@type": "Organization",
@@ -60,11 +68,11 @@
         "@type": "WebPage",
         "@id": "https://thin-thin.com/#webpage",
         "url": "https://thin-thin.com/",
-        "name": "科技瘦身与变美 | 瘦瘦科技",
+        "name": "科技瘦身 | 瘦瘦科技",
         "isPartOf": { "@id": "https://thin-thin.com/#website" },
-        "about": ["瘦瘦科技", "科技瘦身与变美", "科技瘦身", "变美"],
+        "about": ["瘦瘦科技", "科技瘦身"],
         "inLanguage": "zh-CN",
-        "description": "瘦瘦科技（thin-thin）科技瘦身与变美官网。",
+        "description": "瘦瘦科技（thin-thin）科技瘦身官网。",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://thin-thin.com/assets/hero-beauty.jpg"
