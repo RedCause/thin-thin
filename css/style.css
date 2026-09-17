@@ -95,6 +95,12 @@ main,
   transform: rotate(45deg);
 }
 
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .brand-text {
   font-family: Oxanium, sans-serif;
   font-weight: 700;
@@ -103,6 +109,12 @@ main,
 }
 
 .brand-text span { color: var(--cyan); }
+
+.brand-cn {
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: var(--muted);
+}
 
 .nav-links {
   display: flex;
